@@ -20,3 +20,13 @@ Route::get('/admin', 'AdminController@index')->name('admin.index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['namespace' => 'Admin'], function(){
+    Route::resource('/users', 'UserController');
+    Route::resource('/tickets', 'TicketController');
+    Route::resource('/message', 'MessageController');
+    Route::resource('/company', 'CompanyController');
+    Route::resource('/role', 'RoleController');
+});
+
+//Route::resource('/test', 'TestController');

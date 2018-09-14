@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://mediaverse.nl">Mediaverse</a>
+                    <a href="https://mediaverse.nl" target="_blank">Mediaverse</a>
                 </div>
             </div>
         </div>
